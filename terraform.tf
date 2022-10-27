@@ -1,19 +1,18 @@
 terraform {
 
-  cloud {
-    organization = "organization-name"
+#  cloud {
+#     organization = "Better-Therapeutics"
 
-    workspaces {
-      name = "learn-terraform-cloud"
-    }
-  }
+#     workspaces {
+#       name = "learn-terraform-cloud"
+#     }
+#   }
 
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.28.0"
+      version = "4.24.0"
     }
   }
 
-  required_version = ">= 0.14.0"
 }
